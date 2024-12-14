@@ -18,14 +18,79 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
 <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.59517&themeRevisionID=65660e4b326633110492e01a"/>
 <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.59517" />
 <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.59517" />
-<style type="text/css" id="form-designer-style"> /* Injected CSS Code */ /* Begining of advanced designer */ /* 17 - INPUT WIDTHS */
+<style type="text/css" id="form-designer-style"> /* Injected CSS Code */ /* Begining of advanced designer */
+/*PREFERENCES STYLE*/
+/* 1 - Preferences style */
+/* 1 - FONT FAMILY */
+.form-all { font-family: "Inter", sans-serif;
+}
+/* 2 - FORM WIDTH */
+.form-all { max-width: 752px;
+}
+/* 5 - FONT SIZE */
+.form-all { font-size: 16px;
+}
+/* 5 - input bg color */
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input { background-color: #8577b3;
+}
+/* 10 - LINE SPACING */
+.form-line { margin-top: 12px; margin-bottom: 12px;
+}
+.supernova .form-all,
+.form-all { background-color: rgba(60, 36, 102, 0.82);
+}
+.supernova { background-color: #111111;
+}
+.supernova body { background-color: transparent;
+}
+.form-all,
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label,
+span.FITB .qb-checkbox-label,
+span.FITB .qb-radiobox-label,
+span.FITB .form-radio label,
+span.FITB .form-checkbox label,
+[data-blotid][data-type=checkbox] [data-labelid],
+[data-blotid][data-type=radiobox] [data-labelid],
+span.FITB-inptCont[data-type=checkbox] label,
+span.FITB-inptCont[data-type=radiobox] label,
+.form-sub-label { color: #ffffff;
+}
+/*PREFERENCES STYLE*/
+/* 17 - INPUT WIDTHS */
 /* 20 - FORM PADDING */
 ul.form-section { padding: 0px 38px;
 }
 /* Heights */
 /* 11 - LINE PADDING */
 /* LABEL STYLE */
+.form-dropdown:first-child { border-width: 1px; border-style: solid; border-color: #2b1c3d; color: #0d091e; background-color: #9a8dc4; height: 40px;
+}
+.form-dropdown { margin: 0; appearance: none;
+}
+li[data-type="control_dropdown"] > div.form-input,
+li[data-type="control_dropdown"] > div.form-input-wide { position: relative;
+}
+li[data-type="control_dropdown"] > div.form-input:before,
+li[data-type="control_dropdown"] > div.form-input-wide:before,
+li[data-type="control_dropdown"] .form-sub-label-container:before { width: 24px; height: 38px; content: ""; display: inline-block; top: 1px; right: 3px; border-left: 1px solid #C3CAD8; background-color: #fff; border-radius: 0 40px 40px 0; border-left-width: 1px; border-left-style: solid; border-left-color: #2b1c3d; background-color: #9a8dc4; position: absolute; pointer-events: none; cursor: pointer;
+}
+li[data-type="control_dropdown"] > div.form-input:after,
+li[data-type="control_dropdown"] > div.form-input-wide:after,
+li[data-type="control_dropdown"] .form-sub-label-container:after { content: ""; display: inline-block; width: 100%; height: 40px; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='6' fill='none' xmlns='\http\://www.w3.org/2000/svg'%3e%3cpath d='M5 5L1 1h8L5 5z' fill='%2357647E' stroke='%2357647E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"); background-position: right 10px bottom 50%; background-size: .625em; background-repeat: no-repeat; border-color: #2b1c3d transparent transparent transparent; position: absolute; top: 1px; right: -2px; pointer-events: none; cursor: pointer;
+}
 /* 12 - ROUNDED INPUTS */
+.form-dropdown { border-radius: 6px; appearance: none; margin: 0;
+}
 .supernova .form-all,
 .form-all { border-radius: 20px;
 }
@@ -58,11 +123,37 @@ ul.form-section { padding: 0px 38px;
 }
 .submit-button { min-width: 180px;
 }
+li[data-type="control_button"] .form-submit-button { color: #ffffff; background-color: rgba(85, 218, 148, 0.91); background-image: none; box-shadow: none; text-shadow: none;
+}
+li[data-type="control_button"] .form-submit-button:hover { background-color: rgba(36, 165, 97, 0.91);
+}
+li[data-type="control_button"] button.jf-form-buttons.form-sacl-button,
+li[data-type="control_button"] button.jf-form-buttons.form-submit-print { color: rgba(85, 218, 148, 0.91); border-color: rgba(85, 218, 148, 0.91); background-image: none; background-color: #fff;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-sacl-button:hover,
+li[data-type="control_button"] button.jf-form-buttons.form-submit-print:hover { background-color: rgba(36, 165, 97, 0.91); color: #fff;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back { background-image: none; background-color: rgba(36, 165, 97, 0.91); box-shadow: none; text-shadow: none;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back:hover { background-color: rgba(27, 123, 72, 0.91); color: #fff;
+}
 .form-all .form-pagebreak-back,
 .form-all .form-pagebreak-next { font-family: "Inter", sans-serif; font-size: 16px; font-weight: normal;
 }
 .form-all .form-pagebreak-back,
 .form-all .form-pagebreak-next { min-width: 128px;
+}
+.form-all li[data-type="control_pagebreak"] .form-pagebreak-next { background-color: rgba(85, 133, 218, 0.91); background-image: none; box-shadow: none; text-shadow: none; color: #ffffff;
+}
+.form-all li[data-type="control_pagebreak"] .form-pagebreak-next:hover { background-color: rgba(36, 83, 165, 0.91);
+}
+.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-sacl-button { color: rgba(85, 133, 218, 0.91); border-color: rgba(85, 133, 218, 0.91); background-image: none; background-color: #fff; color: #ffffff;
+}
+.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-sacl-button:hover { background-color: rgba(36, 83, 165, 0.91); color: #fff;
+}
+.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-pagebreak-back { background-image: none; background-color: rgba(36, 83, 165, 0.91); box-shadow: none; text-shadow: none; color: #ffffff;
+}
+.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-pagebreak-back:hover { background-color: rgba(27, 62, 123, 0.91); color: #fff;
 }
 li[data-type="control_image"] div { text-align: left;
 }
@@ -70,9 +161,11 @@ li[data-type="control_image"] img { border: none; border-width: 0px !important; 
 }
 .supernova { background-repeat: no-repeat; background-attachment: scroll; background-position: center top; background-attachment: fixed; background-size: auto; background-size: cover;
 }
-.supernova { background-image: none;
+.supernova { background-image: none; background-image: url("https://www.jotform.com/uploads/middleoftherainbow/form_files/vecteezy_elegant-purple-scene-diagonal-glowing-with-lighting-effect_16178548.675de060d16f05.07257476.jpg");
 }
-#stage { background-image: none;
+.body { background-image: none; background-image: url("https://www.jotform.com/uploads/middleoftherainbow/form_files/vecteezy_elegant-purple-scene-diagonal-glowing-with-lighting-effect_16178548.675de060d16f05.07257476.jpg");
+}
+#stage { background-image: none; background-image: url("https://www.jotform.com/uploads/middleoftherainbow/form_files/vecteezy_elegant-purple-scene-diagonal-glowing-with-lighting-effect_16178548.675de060d16f05.07257476.jpg");
 }
 /* | */
 .form-all { background-repeat: no-repeat; background-attachment: scroll; background-position: center top; background-size: cover;
@@ -143,7 +236,7 @@ div.form-header-group.hasImage { padding: 40px 52px;
 }
 .form-line-active { background-color: #f1f5ff;
 }
-/* 29 - FORM COLUMNS */ /*PREFERENCES STYLE*/ .form-all { font-family: Inter, sans-serif; } .form-label.form-label-auto { display: block; float: none; text-align: left; width: 100%; } .form-line { margin-top: 12px; margin-bottom: 12px; } .form-all { max-width: 752px; width: 100%; } .form-label.form-label-left, .form-label.form-label-right, .form-label.form-label-left.form-label-auto, .form-label.form-label-right.form-label-auto { width: 230px; } .form-all { font-size: 16px } .supernova .form-all, .form-all { background-color: rgba(60, 36, 102, 0.82); } .form-all { color: #ffffff; } .form-header-group .form-header { color: #ffffff; } .form-header-group .form-subHeader { color: #ffffff; } .form-label-top, .form-label-left, .form-label-right, .form-html, .form-checkbox-item label, .form-radio-item label, span.FITB .qb-checkbox-label, span.FITB .qb-radiobox-label, span.FITB .form-radio label, span.FITB .form-checkbox label, [data-blotid][data-type=checkbox] [data-labelid], [data-blotid][data-type=radiobox] [data-labelid], span.FITB-inptCont[data-type=checkbox] label, span.FITB-inptCont[data-type=radiobox] label { color: #ffffff; } .form-sub-label { color: #ffffff; } .supernova { background-color: #111111; } .supernova body { background: transparent; } .form-textbox, .form-textarea, .form-dropdown, .form-radio-other-input, .form-checkbox-other-input, .form-captcha input, .form-spinner input { background-color: #e3e3e3; } .supernova { background-repeat: no-repeat; background-size:cover; background-attachment: fixed; background-position: center top; } .supernova, #stage { background-image: url("https://www.jotform.com/uploads/middleoftherainbow/form_files/vecteezy_elegant-purple-scene-diagonal-glowing-with-lighting-effect_16178548.675de060d16f05.07257476.jpg"); } .form-all { background-image: none; } /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+/* 29 - FORM COLUMNS */ /*__INSPECT_SEPERATOR__*/
 .form-line { background-color : rgba(18, 14, 26, 0.5); border-radius : 16px;
 } /* Injected CSS Code */
 </style>
@@ -151,9 +244,9 @@ div.form-header-group.hasImage { padding: 40px 52px;
 <input type="hidden" name="formID" value="243477589061265" />
 <input type="hidden" id="JWTContainer" value="" />
 <input type="hidden" id="cardinalOrderNumber" value="" />
-<input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1734205609321" />
+<input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1734206508253" />
 <input type="hidden" id="submitSource" name="submitSource" value="unknown" />
-<input type="hidden" id="buildDate" name="buildDate" value="1734205609321" />
+<input type="hidden" id="buildDate" name="buildDate" value="1734206508253" />
 <input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" />
 <input type="hidden" name="eventObserver" value="1" />
 <div role="main" class="form-all">
@@ -405,7 +498,7 @@ div.form-header-group.hasImage { padding: 40px 52px;
 <li class="form-line" data-type="control_widget" id="id_66">
 <div id="cid_66" class="form-input-wide" data-layout="full">
 <div style="width:100%;text-align:Left" data-component="widget-widget">
-<iframe title="YouTube" data-type="oembed" scrolling="no" class="custom-field-frame widget-frame" id="customFieldFrame_66" src="https://widgets-cache.jotform.io/243477589061265/66?v=1734205609342" style="width:100%;height:350px;border:0;max-width:650px" allowfullscreen="" allow="autoplay">
+<iframe title="YouTube" data-type="oembed" scrolling="no" class="custom-field-frame widget-frame" id="customFieldFrame_66" src="https://widgets-cache.jotform.io/243477589061265/66?v=1734206508275" style="width:100%;height:350px;border:0;max-width:650px" allowfullscreen="" allow="autoplay">
 </iframe>
 </div>
 </div>
