@@ -2,11 +2,10 @@
 <script src="https://cdn03.jotfor.ms/static/prototype.forms.js?v=3.3.59517" type="text/javascript"></script>
 <script src="https://cdn01.jotfor.ms/static/jotform.forms.js?v=3.3.59517" type="text/javascript"></script>
 <script src="https://cdn01.jotfor.ms/s/umd/56ea8d1b208/for-widgets-server.js?v=3.3.59517" type="text/javascript"></script>
-<script src="https://cdn01.jotfor.ms/s/umd/56ea8d1b208/for-form-branding-footer.js?v=3.3.59517" type="text/javascript" defer></script>
 <script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.59517" type="text/javascript"></script>
 <script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.59517" type="text/javascript"></script>
-<script type="text/javascript">	JotForm.newDefaultTheme = true;
-	JotForm.extendsNewTheme = false;
+<script type="text/javascript">	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = true;
 	JotForm.singleProduct = false;
 	JotForm.newPaymentUIForNewCreatedForms = false;
 	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
@@ -34,10 +33,13 @@ if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',
    setTimeout(function() {
 JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"heading","qid":"13","text":"Steli Awards","type":"control_head"},null,null,null,null,{"description":"","mde":"No","name":"bestOverall","qid":"18","subLabel":"","text":"Best Overall Stream","type":"control_textarea","wysiwyg":"Disable"},{"name":"submit","qid":"19","text":"Submit","type":"control_button"},null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"bestEvent","qid":"31","text":"Best Event","type":"control_radio"},{"description":"","name":"best32","qid":"32","text":"Best Solo Collaborator","type":"control_radio"},null,{"description":"Sorry Q isn't an offical mod!","name":"best34","qid":"34","text":"Best Moderator","type":"control_radio"},{"description":"","name":"best35","qid":"35","text":"Best In-Joke","type":"control_radio"},{"description":"","name":"best36","qid":"36","text":"Best Clip -- see below","type":"control_radio"},null,{"description":"","name":"best38","qid":"38","text":"Best VIP","type":"control_radio"},{"description":"","name":"best39","qid":"39","text":"Best Dsylecix Moment","type":"control_radio"},{"description":"","name":"best40","qid":"40","text":"Best Bottom Moment","type":"control_radio"},{"description":"","name":"bestDance","qid":"41","text":"Best Dance","type":"control_radio"},{"name":"community","qid":"42","text":"Community","type":"control_head"},{"name":"bestStreams","qid":"43","text":"Best Streams","type":"control_head"},{"name":"typeA44","qid":"44","text":"ProgressBar","type":"control_widget"},null,{"name":"pageBreak","qid":"46","text":"Page Break","type":"control_pagebreak"},{"name":"pageBreak47","qid":"47","text":"Page Break","type":"control_pagebreak"},null,{"description":"","name":"bestCringe","qid":"49","text":"Best Cringe Singing","type":"control_radio"},{"description":"","name":"best50","qid":"50","text":"Best Schizo Moment (do I put this?)","type":"control_radio"},{"description":"","name":"bestStream","qid":"51","text":"Best Stream Bit","type":"control_radio"},{"description":"","name":"bestSound","qid":"52","text":"Best Sound Alert","type":"control_radio"},{"description":"","name":"bestPrank","qid":"53","text":"Best prank pulled","type":"control_radio"},{"description":"","name":"bestCommunity","qid":"54","text":"Best Community Creation (Creator?)","type":"control_radio"},{"description":"","name":"bestMysteli","qid":"55","text":"Best Mysteli YT Video","type":"control_radio"},{"description":"","name":"bestSingleplayer","qid":"56","subLabel":"","text":"Best Singleplayer Game I Played","type":"control_dropdown"},{"description":"","name":"bestShow","qid":"57","text":"Best Show","type":"control_radio"},null,null,null,null,null,null,null,null,{"name":"typeA","qid":"66","text":"","type":"control_widget"},null,null,null,{"description":"based on users who show up frequently and talk in chat","name":"chatterOf","qid":"70","subLabel":"","text":"Chatter of The Year","type":"control_dropdown"},{"name":"mysteliMoments","qid":"71","text":"Mysteli Moments","type":"control_head"},{"name":"ifYou","qid":"72","text":"If you need a recall check this link","type":"control_head"}]);}, 20); 
 </script>
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/form-common.css?v=5a9ee7f
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css?v=5a9ee7f
 "/>
 <style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.59517&themeRevisionID=65660e4b326633110492e01a"/>
+<link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Inter" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/defaultV2.css?v=5a9ee7f
+"/>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/548a097b700cc4dd218b4567.css?v=3.3.59517&themeRevisionID=66434f2c326563d2b4eec054"/>
 <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.59517" />
 <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.59517" />
 <style type="text/css" id="form-designer-style">
@@ -65,19 +67,19 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
 .form-checkbox-other-input,
 .form-captcha input,
 .form-spinner input {
-  background-color: #8577b3;
+  background-color: #ffffff;
 }
 /* 10 - LINE SPACING */
 .form-line {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .supernova .form-all,
 .form-all {
-  background-color: rgba(60, 36, 102, 0.82);
+  background-color: rgba(227, 227, 227, 0.5);
 }
 .supernova {
-  background-color: #111111;
+  background-color: #ecedf3;
 }
 .supernova body {
   background-color: transparent;
@@ -98,7 +100,7 @@ span.FITB .form-checkbox label,
 span.FITB-inptCont[data-type=checkbox] label,
 span.FITB-inptCont[data-type=radiobox] label,
 .form-sub-label {
-  color: #ffffff;
+  color: #fff4f4;
 }
 /*PREFERENCES STYLE*/
 /* 17 - INPUT WIDTHS */
@@ -107,78 +109,35 @@ ul.form-section {
   padding: 0px 38px;
 }
 /* Heights */
+li[data-type="control_textbox"] div[data-layout="half"],
+li[data-type="control_dropdown"] div[data-layout="half"],
+li[data-type="control_email"] div[data-layout="half"],
+li[data-type="control_number"] div[data-layout="half"],
+li[data-type="control_phone"] div[data-layout="half"],
+li[data-type="control_datetime"] div[data-layout="half"] {
+  width: 100% !important;
+  max-width: 310px;
+}
+.form-label {
+  margin-bottom: 14px;
+  margin-right: 0;
+}
 /* 11 - LINE PADDING */
 /* LABEL STYLE */
-.form-dropdown:first-child {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #2b1c3d;
-  color: #0d091e;
-  background-color: #9a8dc4;
-  height: 40px;
+[data-type="control_dropdown"] .form-input,
+[data-type="control_birthdate"] .form-input,
+[data-type="control_time"] .form-input,
+[data-type="control_dropdown"] .form-input-wide,
+[data-type="control_birthdate"] .form-input-wide,
+[data-type="control_time"] .form-input-wide {
+  width: 100% !important;
+  max-width: 310px;
 }
-.form-dropdown {
-  margin: 0;
-  appearance: none;
-}
-li[data-type="control_dropdown"] > div.form-input,
-li[data-type="control_dropdown"] > div.form-input-wide {
-  position: relative;
-}
-li[data-type="control_dropdown"] > div.form-input:before,
-li[data-type="control_dropdown"] > div.form-input-wide:before,
-li[data-type="control_dropdown"] .form-sub-label-container:before {
-  width: 24px;
-  height: 38px;
-  content: "";
-  display: inline-block;
-  top: 1px;
-  right: 3px;
-  border-left: 1px solid #C3CAD8;
-  background-color: #fff;
-  border-radius: 0 40px 40px 0;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #2b1c3d;
-  background-color: #9a8dc4;
-  position: absolute;
-  pointer-events: none;
-  cursor: pointer;
-}
-li[data-type="control_dropdown"] > div.form-input:after,
-li[data-type="control_dropdown"] > div.form-input-wide:after,
-li[data-type="control_dropdown"] .form-sub-label-container:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 40px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='6' fill='none' xmlns='\http\://www.w3.org/2000/svg'%3e%3cpath d='M5 5L1 1h8L5 5z' fill='%2357647E' stroke='%2357647E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
-  background-position: right 10px bottom 50%;
-  background-size: .625em;
-  background-repeat: no-repeat;
-  border-color: #2b1c3d transparent transparent transparent;
-  position: absolute;
-  top: 1px;
-  right: -2px;
-  pointer-events: none;
-  cursor: pointer;
+[data-type="control_dropdown"] .form-dropdown {
+  width: 100% !important;
+  max-width: 310px;
 }
 /* 12 - ROUNDED INPUTS */
-.form-dropdown {
-  border-radius: 6px;
-  appearance: none;
-  margin: 0;
-}
-.supernova .form-all,
-.form-all {
-  border-radius: 20px;
-}
-.form-section:first-child {
-  border-radius: 20px 20px 0 0;
-}
-.form-section:last-child {
-  border-radius: 0 0 20px 20px;
-}
 .form-radio-item,
 .form-checkbox-item {
   padding-bottom: 0px;
@@ -219,38 +178,6 @@ li[data-type="control_dropdown"] .form-sub-label-container:after {
 .submit-button {
   min-width: 180px;
 }
-li[data-type="control_button"] .form-submit-button {
-  color: #ffffff;
-  background-color: rgba(85, 218, 148, 0.91);
-  background-image: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-li[data-type="control_button"] .form-submit-button:hover {
-  background-color: rgba(36, 165, 97, 0.91);
-}
-li[data-type="control_button"] button.jf-form-buttons.form-sacl-button,
-li[data-type="control_button"] button.jf-form-buttons.form-submit-print {
-  color: rgba(85, 218, 148, 0.91);
-  border-color: rgba(85, 218, 148, 0.91);
-  background-image: none;
-  background-color: #fff;
-}
-li[data-type="control_button"] button.jf-form-buttons.form-sacl-button:hover,
-li[data-type="control_button"] button.jf-form-buttons.form-submit-print:hover {
-  background-color: rgba(36, 165, 97, 0.91);
-  color: #fff;
-}
-li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back {
-  background-image: none;
-  background-color: rgba(36, 165, 97, 0.91);
-  box-shadow: none;
-  text-shadow: none;
-}
-li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back:hover {
-  background-color: rgba(27, 123, 72, 0.91);
-  color: #fff;
-}
 .form-all .form-pagebreak-back,
 .form-all .form-pagebreak-next {
   font-family: "Inter", sans-serif;
@@ -260,38 +187,6 @@ li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back:hover 
 .form-all .form-pagebreak-back,
 .form-all .form-pagebreak-next {
   min-width: 128px;
-}
-.form-all li[data-type="control_pagebreak"] .form-pagebreak-next {
-  background-color: rgba(85, 133, 218, 0.91);
-  background-image: none;
-  box-shadow: none;
-  text-shadow: none;
-  color: #ffffff;
-}
-.form-all li[data-type="control_pagebreak"] .form-pagebreak-next:hover {
-  background-color: rgba(36, 83, 165, 0.91);
-}
-.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-sacl-button {
-  color: rgba(85, 133, 218, 0.91);
-  border-color: rgba(85, 133, 218, 0.91);
-  background-image: none;
-  background-color: #fff;
-  color: #ffffff;
-}
-.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-sacl-button:hover {
-  background-color: rgba(36, 83, 165, 0.91);
-  color: #fff;
-}
-.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-pagebreak-back {
-  background-image: none;
-  background-color: rgba(36, 83, 165, 0.91);
-  box-shadow: none;
-  text-shadow: none;
-  color: #ffffff;
-}
-.form-all li[data-type="control_pagebreak"] button.jf-form-buttons.form-pagebreak-back:hover {
-  background-color: rgba(27, 62, 123, 0.91);
-  color: #fff;
 }
 li[data-type="control_image"] div {
   text-align: left;
@@ -312,11 +207,11 @@ li[data-type="control_image"] img {
 }
 .supernova {
   background-image: none;
-  background-image: url("https://www.jotform.com/uploads/middleoftherainbow/form_files/vecteezy_elegant-purple-scene-diagonal-glowing-with-lighting-effect_16178548.675de060d16f05.07257476.jpg");
+  background-image: url("https://cms.jotform.com/uploads/image_upload/image_upload/global/121300_clever-colorful-bg.jpg");
 }
 #stage {
   background-image: none;
-  background-image: url("https://www.jotform.com/uploads/middleoftherainbow/form_files/vecteezy_elegant-purple-scene-diagonal-glowing-with-lighting-effect_16178548.675de060d16f05.07257476.jpg");
+  background-image: url("https://cms.jotform.com/uploads/image_upload/image_upload/global/121300_clever-colorful-bg.jpg");
 }
 /* | */
 .form-all {
@@ -397,7 +292,7 @@ div.form-header-group.hasImage {
 }
 .form-header-group .form-header,
 .form-header-group .form-subHeader {
-  color: #ffffff;
+  color: #fff4f4;
 }
 .form-line-error {
   -webkit-transition-property: none;
@@ -415,7 +310,7 @@ div.form-header-group.hasImage {
   -ms-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: #632733;
+  background-color: #fff4f4;
 }
 .form-line-error .form-error-message {
   background-color: #f23a3c;
@@ -447,23 +342,28 @@ div.form-header-group.hasImage {
   -ms-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: #632733;
+  background-color: #fff4f4;
 }
 .form-header-group .form-header,
 .form-header-group .form-subHeader {
-  color: #ffffff;
+  color: #fff4f4;
 }
 .form-line-active {
-  background-color: #f1f5ff;
+  background-color: rgba(195, 202, 216, 0.02);
 }
 /* 29 - FORM COLUMNS */
 
 /*__INSPECT_SEPERATOR__*/
+.form-line {
+    background-color : rgba(18, 14, 26, 0.5);
+    border-radius : 16px;
+}
+
 
     /* Injected CSS Code */
 </style>
 
-<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/243477589061265" method="post" name="form_243477589061265" id="243477589061265" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="243477589061265" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1734207198160" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1734207198160" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/243477589061265" method="post" name="form_243477589061265" id="243477589061265" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="243477589061265" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1734207719666" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1734207719666" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
   <div role="main" class="form-all">
     <ul class="form-section page-section" role="presentation">
       <li id="cid_13" class="form-input-wide" data-type="control_head">
@@ -561,7 +461,7 @@ div.form-header-group.hasImage {
       </li>
       <li class="form-line" data-type="control_widget" id="id_66">
         <div id="cid_66" class="form-input-wide" data-layout="full">
-          <div style="width:100%;text-align:Left" data-component="widget-widget"><iframe title="YouTube" data-type="oembed" scrolling="no" class="custom-field-frame widget-frame" id="customFieldFrame_66" src="https://widgets-cache.jotform.io/243477589061265/66?v=1734207198180" style="width:100%;height:350px;border:0;max-width:650px" allowfullscreen="" allow="autoplay"></iframe></div>
+          <div style="width:100%;text-align:Left" data-component="widget-widget"><iframe title="YouTube" data-type="oembed" scrolling="no" class="custom-field-frame widget-frame" id="customFieldFrame_66" src="https://widgets-cache.jotform.io/243477589061265/66?v=1734207719690" style="width:100%;height:350px;border:0;max-width:650px" allowfullscreen="" allow="autoplay"></iframe></div>
         </div>
       </li>
       <li class="form-line" data-type="control_radio" id="id_38"><label class="form-label form-label-top form-label-auto" id="label_38" aria-hidden="false"> Best VIP </label>
@@ -708,5 +608,4 @@ div.form-header-group.hasImage {
       all_spc[i].value = "243477589061265-243477589061265";
     }
   </script>
-</form>
-<link id=color-scheme-style href="https://cdn01.jotfor.ms/stylebuilder/static/color-scheme.css?v=3.3.59517" type="text/css" rel="stylesheet" /><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
