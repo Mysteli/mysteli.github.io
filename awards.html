@@ -713,14 +713,6 @@ body {
                   triggerSubmit(hiddenInput.form)
                 }
 
-                function triggerSubmit(formElement)
-                {
-                  var button = formElement.ownerDocument.createElement('input');
-                  button.style.display = 'none';
-                  button.type = 'submit';
-                  formElement.appendChild(button).click();
-                  formElement.removeChild(button);
-                }
               }
 
               // not really required for invisible recaptcha
